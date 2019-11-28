@@ -30,8 +30,11 @@ namespace ThemeParkTycoonGame.Forms.Screens
 
         private void RefreshInventory(ParkInventory parkInventory)
         {
+
             List<BuildableObject> objects = parkInventory.All;
 
+            objectsListView.Clear();
+            
             objectsListView.LargeImageList = new ImageList();
             objectsListView.LargeImageList.ImageSize = new Size(64, 64);
             objectsListView.Items.Clear();
